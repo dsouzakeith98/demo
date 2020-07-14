@@ -1,0 +1,1 @@
+this is the first file created using cmd and notepad and uploaded to github via ssh
