@@ -1,0 +1,85 @@
+.belnav {
+  overflow: hidden;
+  padding-top: 10px;
+  height: 60px;
+}
+.belnav a {
+  float: right;
+
+
+  text-align: center;
+  padding: 6px 25px;
+  text-decoration: none;
+  font-size: 15px;
+  padding-top: 2px;
+  transition: 0.1s ease;
+}
+.avatar img
+{
+  margin-top: -10px;
+
+}
+.avatar a
+{
+  margin-top: 8px;
+
+  font-size: 17px;
+
+}
+
+.arrow {
+  border: solid;
+  border-width: 0 2px 2px 0;
+  display: inline-block;
+  padding: 3px;
+  
+
+
+
+}
+.down {
+  transform: rotate(45deg);
+
+
+}
+.belnav .icon {
+  display: none;
+}
+
+.belnavb  {
+    float: right;
+ 
+  color: white;
+  text-align: center;
+  background-color: #085385;
+  padding: 3px 20px;
+  border-radius: 20px;
+  text-decoration: none;
+  font-size: 15px;
+  display: inline-block;
+  margin: 8px;
+  margin-right: 20px;
+}
+.belnavc  {
+    float: right;
+    color: white;
+    text-align: center;
+    background-color: #3e8914;
+    padding: 3px 20px;
+    border-radius: 20px;
+    text-decoration: none;
+    font-size: 15px;
+    display: inline-block;
+    margin: 8px;
+    margin-right: 20px;
+}
+
+.belnavb:hover {
+
+  background-color:  #37a1d2;
+}
+.belnavc:hover {
+
+  background-color:  #29bf12;
+}
+

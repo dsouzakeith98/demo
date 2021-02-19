@@ -1,0 +1,331 @@
+
+
+
+
+
+#app2-cover2
+{
+    position: absolute;
+    
+    width: 300px;
+    height: 42px;
+ margin-left: 20px;
+ margin-top: 250px;
+
+}
+
+
+
+#select2-button2 {
+    position: relative;
+    height: 43px;
+    padding: 12px 14px;
+    background-color: #ffde0a;
+    cursor: pointer;
+    display: grid;
+    grid-template-columns: auto auto;
+    justify-content: space-between;
+
+}
+
+#options2-view2-button2
+{
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    opacity: 0;
+    cursor: pointer;
+    z-index: 3;
+}
+
+#selected2-value2
+{
+    font-size: 16px;
+    line-height: 1;
+    margin-right: 26px;
+}
+
+.option2 i
+{
+    width: 16px;
+    height: 16px;
+
+}
+
+.label2
+{
+    color: grey;
+    font-size: 13px;
+      font-family: "Montserrat", sans-serif;
+}
+.option2
+{
+    color: black;
+    font-size: 13px;
+      font-family: "Montserrat", sans-serif;
+      
+}
+
+
+.brd2 span
+{
+    font-size: 14px;
+      font-family: "Montserrat", sans-serif;
+      justify-content: center;
+      letter-spacing: 1px;
+}
+
+
+.options2
+{
+    position: absolute;
+    left: 0;
+    width: 250px;
+}
+
+#options2
+{
+    position: absolute;
+    top: 42px;
+    right: 0;
+    left: 0;
+    width: 298px;
+    margin: 0 auto;
+    background-color: #fff;
+  
+}
+.arrow2{
+  border: solid;
+
+  border-width: 0 2px 2px 0;
+  display: inline-block;
+  padding: 3px;
+
+  text-align: right;
+}
+
+
+.down2 {
+  transform: rotate(45deg);
+
+ 
+
+}
+
+
+#options2-view2-button2:checked + #select2-button2 #arrow2
+{
+
+    transform: rotate(-180deg);
+}
+
+#options2-view2-button2:checked ~ #options2
+{
+    border: 1px solid #e2eded;
+
+}
+
+.option2
+{
+    position: relative;
+    line-height: 1;
+    transition: 0.3s top;
+    z-index: 2;
+}
+
+.option2 i
+{
+    position: absolute;
+    left: 14px;
+    padding: 0;
+    display: none;
+}
+
+#options2-view2-button2:checked ~ #options2 .option2 i
+{
+    display: block;
+    padding: 12px 0;
+}
+
+.label2
+{
+    display: none;
+    padding: 0;
+    margin-left: 27px;
+}
+
+#options2-view2-button2:checked ~ #options2 .label2
+{
+    display: block;
+    padding: 12px 14px;    
+}
+
+.s-c2
+{
+    position: absolute;
+    left: 0;
+    width: 100%;
+    height: 50%;
+}
+
+.s-c2.top2
+{
+    top: 0;
+}
+
+.s-c2.bottom2
+{
+    bottom: 0;
+}
+
+input[type="radio"]
+{
+    position: absolute;
+    right: 0;
+    left: 0;
+    width: 100%;
+    height: 50%;
+    margin: 0;
+    opacity: 0;
+    cursor: pointer;
+}
+
+.s-c2:hover ~ i
+{
+    color: #fff;
+    opacity: 0;
+}
+
+.s-c2:hover
+{
+    height: 100%;
+    z-index: 1;
+}
+
+.s-c2.bottom2:hover + i
+{
+    bottom: -25px;
+    animation: moveup 0.3s ease 0.1s forwards;
+}
+
+.s-c2.top2:hover ~ i
+{
+    top: -25px;
+    animation: movedown 0.3s ease 0.1s forwards;
+}
+
+@keyframes moveup
+{
+    0%{ bottom: -25px; opacity: 0;}
+    100%{ bottom: 0; opacity: 1;}
+}
+
+@keyframes movedown
+{
+    0%{ top: -25px; opacity: 0;}
+    100%{ top: 0; opacity: 1;}
+}
+
+.label2
+{
+    transition: 0.3s ease all;
+}
+
+.opt2-val2
+{
+    position: absolute;
+    left: 14px;
+    width: 217px;
+    height: 21px;
+    opacity: 0;
+    background-color: #fff;
+    transform: scale(0);
+}
+
+.option2 input[type="radio"]:checked ~ .opt2-val2
+{
+    opacity: 1;
+    transform: scale(1);
+}
+
+.option2 input[type="radio"]:checked ~ i
+{
+    top: 0;
+    bottom: auto;
+    opacity: 1;
+    animation: unset;
+}
+
+.option2 input[type="radio"]:checked ~ i, .option2 input[type="radio"]:checked ~ .label2
+{
+    color:black;
+}
+
+.option2 input[type="radio"]:checked ~ .label2:before
+{
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    z-index: -1;
+}
+
+#options2-view2-button2:not(:checked) ~ #options2 .option2 input[type="radio"]:checked ~ .opt2-val2
+{
+    top: -30px;
+      background-color: #ffde0a;
+
+}
+
+.option2:nth-child(1) input[type="radio"]:checked ~ .opt2-val2
+{
+    top: -30px;
+      background-color: #ffde0a;
+}
+
+
+
+.option2:nth-child(2) input[type="radio"]:checked ~ .opt2-val2
+{
+    top: -67px;
+      background-color: #ffde0a;
+}
+
+
+
+.option2:nth-child(3) input[type="radio"]:checked ~ .opt2-val2
+{
+    top: -104px;
+    background-color: #ffde0a;
+}
+
+
+
+.option2:nth-child(4) input[type="radio"]:checked ~ .opt2-val2
+{
+    top: -141px;
+      background-color: #ffde0a;
+}
+
+
+.option2:nth-child(5) input[type="radio"]:checked ~ .opt2-val2
+{
+    top: -178px;
+      background-color: #ffde0a;
+}
+
+
+
+
+
+
+
+
+
