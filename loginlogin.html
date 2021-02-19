@@ -1,0 +1,36 @@
+<html>
+<body>
+<link rel="stylesheet" type="text/css" href="looginlogin.css">
+<header>
+  <div class="login"><a href="#">Login</a></div>
+  <div class="entypo-light-up"></div>
+  <div class="entypo-pencil"></div>  
+</header>
+<div class="loginbutton">LOGIN</div>
+<form action="#">
+  <div>
+    <label for="name">username</label>
+    <input type="text" name="name" id="name" />
+  </div>
+  <div>
+    <label for="password">password</label>
+    <input type="password" name="password" id="password" />
+  </div>
+</form>  
+<script type="text/javascript">
+  /* Inspired by Ozgun Tandiroglu's Dribbble Shot.
+ * http://dribbble.com/shots/1068722-Login
+ * 2013 by Kaushalya R. Mandaliya
+ * https://twitter.com/kmandalwala
+ * http://seebeetee.com
+ * For crazyness just change that rotate from 360deg to 3600deg...:P
+ * Thanks & Enjoy.
+ */
+$(".loginbutton").click(function(){
+  $(".loginbutton").toggleClass("activeloginbutton");
+  $("form").slideToggle(1000);
+});
+</script>
+<div class="credit">Inspired by Ozgun Tandiroglu's Dribbble <a href="http://dribbble.com/shots/1068722-Login">shot</a>.</div>
+</body>
+</html>

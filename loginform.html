@@ -1,0 +1,94 @@
+<html>
+<body>
+   <link rel="stylesheet" type="text/css" href="css/import.css">
+  <link rel="stylesheet" type="text/css" href="css/join.css">
+  <link rel="stylesheet" type="text/css" href="css/loginnew.css">
+    <link rel="stylesheet" type="text/css" href="css/nav.css">
+    <link rel="stylesheet" type="text/css" href="css/login.css">
+    <link rel="stylesheet" type="text/css" href="css/belownav.css">
+
+
+<div class="belnavc modal2-button2">Sign up</div>
+
+
+
+<div class="modal2">
+  <div class="modal2-container2">
+    <div class="modal2-left2">
+      <h1 class="modal2-title2">Login!</h1>
+     
+    
+      <div class="input2-block2">
+        <label for="email" class="input2-label2">Email</label>
+        <input type="email" name="email" id="email" placeholder="Email">
+      </div>
+   
+
+
+
+      <div class="input2-block2">
+        <label for="password" class="input2-label2">Password</label>
+        <input type="password" name="password" id="password" placeholder="Password">
+      </div>
+
+   
+
+     
+
+  
+  <button type="submit" class="submit" name="submit" value="submit" class="example_f modal2-button2">Sign Up</button>
+ </div>
+    <div class="modal2-right2">
+      <img src="images/cyc.jpg" alt="">
+    </div>
+    <button class="icon2-button2 close2-button2">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 50 50">
+    <path d="M 25 3 C 12.86158 3 3 12.86158 3 25 C 3 37.13842 12.86158 47 25 47 C 37.13842 47 47 37.13842 47 25 C 47 12.86158 37.13842 3 25 3 z M 25 5 C 36.05754 5 45 13.94246 45 25 C 45 36.05754 36.05754 45 25 45 C 13.94246 45 5 36.05754 5 25 C 5 13.94246 13.94246 5 25 5 z M 16.990234 15.990234 A 1.0001 1.0001 0 0 0 16.292969 17.707031 L 23.585938 25 L 16.292969 32.292969 A 1.0001 1.0001 0 1 0 17.707031 33.707031 L 25 26.414062 L 32.292969 33.707031 A 1.0001 1.0001 0 1 0 33.707031 32.292969 L 26.414062 25 L 33.707031 17.707031 A 1.0001 1.0001 0 0 0 32.980469 15.990234 A 1.0001 1.0001 0 0 0 32.292969 16.292969 L 25 23.585938 L 17.707031 16.292969 A 1.0001 1.0001 0 0 0 16.990234 15.990234 z"></path>
+</svg>
+      </button>
+  </div>
+
+   
+</div>
+<script type="text/javascript">
+
+    const body2 = document.querySelector("body");
+const modal2 = document.querySelector(".modal2");
+
+const modalButton2 = document.querySelectorAll(".modal2-button2");
+const closeButton2 = document.querySelector(".close2-button2");
+const scrollDown2 = document.querySelector(".scroll2-down2");
+const submit2 = document.querySelector('.submit');
+let isOpened2 = false;
+
+const openModal = () => {
+  modal2.classList.add("is-open2");
+  body2.style.overflow = "hidden2";
+};
+
+const closeModal = (e) => {
+  e.preventDefault();
+  modal2.classList.remove("is-open2");
+  body2.style.overflow = "initial";
+};
+
+window.addEventListener("scroll", () => {
+  if (window.scrollY > window.innerHeight / 3 && !isOpened2) {
+    isOpened2 = true;
+    scrollDown2.style.display = "none";
+    openModal();
+  }
+});
+
+modalButton2.forEach(btn => btn.addEventListener("click", openModal));
+closeButton2.addEventListener("click", closeModal);
+submit2.addEventListener('click',storeindb)
+
+document.onkeydown = evt => {
+  evt = evt || window.event;
+  evt.keyCode === 27 ? closeModal() : false;
+};
+
+  </script>
+</body>
+</html>
